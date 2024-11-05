@@ -1,0 +1,345 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f9f4; /* Light background */
+    color: #333;
+}
+
+/* Header Navigation Bar */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2e7d32; /* Dark Green */
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links ul li {
+    margin-right: 20px;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+    color: #a5d6a7; /* Light Green Hover */
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Main Layout */
+.main-container {
+    display: flex;
+    min-height: 100vh;
+    
+}
+
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background-color: #388e3c; /* Green */
+    padding: 20px;
+    color: #fff;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background: #2e7d32;
+    color: #c8e6c9; /* Light Green Hover */
+}
+
+/* Dashboard Content */
+.dashboard-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    
+}
+
+/* Dashboard Stats Section */
+.dashboard-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.stat-box {
+    background-color: #e8f5e9; /* Very Light Green */
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 23%;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stat-box h3 {
+    color: #2e7d32; /* Dark Green */
+    margin-bottom: 10px;
+}
+
+.stat-box p {
+    color: #4caf50; /* Medium Green */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Map Section */
+.dashboard-map {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/* Wrapper for the map and title */
+/* Map and Notifications Section (Flexbox) */
+.map-notification-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align the map and notifications at the top */
+    margin-bottom: 30px;
+}
+
+/* Map wrapper - Flex item */
+.map-wrapper {
+    background-color: #e8f5e9; /* Light green background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%; /* Adjust width to make it flexible */
+    margin-right: 20px; /* Add some spacing between map and notifications */
+}
+/* Notification Section (General) */
+.dashboard-notifications {
+    background-color: #f1f8e9; /* Light Green Background */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Adjust width to match the map size */
+}
+
+/* Title Styling */
+.dashboard-notifications h2 {
+    color: #2e7d32; /* Dark Green */
+    margin-bottom: 15px;
+}
+
+/* List of Notifications */
+.dashboard-notifications ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* General Notification Styling */
+.dashboard-notifications ul li {
+    margin-bottom: 10px;
+    color: #388e3c; /* Green */
+    font-weight: bold;
+    padding-left: 15px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Recent Notification Styling - Blinking and Marquee */
+.latest-notification {
+    color: #d32f2f; /* Red color for urgency */
+    font-weight: bold;
+    font-size: 1.2rem;
+    animation: blink 1s infinite alternate; /* Blinking effect */
+    white-space: nowrap; /* Ensure text stays in one line */
+    overflow: hidden;
+    display: inline-block;
+}
+
+/* Rest of the CSS remains unchanged */
+
+/* Map title */
+.map-wrapper h2 {
+    color: #2e7d32; /* Dark Green */
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+/* Map container */
+.map-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+/* Iframe styling for the map */
+.map-frame {
+    border: none;
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+}
+
+/* Global Styles (same as before) */
+
+/* Dashboard Content */
+.dashboard-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* General Section Styling */
+.dashboard-section {
+    background-color: #e8f5e9; /* Light Green Background */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensure sections take up full content width */
+}
+
+.dashboard-section h2 {
+    color: #2e7d32; /* Dark Green */
+    margin-bottom: 15px;
+}
+
+/* Map and Notification Styling (already styled) */
+
+/* Recent Activity Section */
+.recent-activity ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.recent-activity ul li {
+    margin-bottom: 10px;
+    color: #388e3c; /* Green */
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+/* Tasks & Reminders Section */
+.tasks-reminders ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.tasks-reminders ul li {
+    margin-bottom: 15px;
+    color: #2e7d32;
+    font-weight: bold;
+    position: relative;
+}
+
+.progress-bar {
+    display: block;
+    height: 10px;
+    background-color: #c8e6c9;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.progress-bar span {
+    display: block;
+    height: 100%;
+    background-color: #4caf50; /* Green Progress */
+}
+
+/* User Feedback Section */
+.user-feedback ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.user-feedback ul li {
+    margin-bottom: 10px;
+    font-style: italic;
+    color: #388e3c;
+}
+
+/* Messages Section */
+.messages ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.messages ul li {
+    margin-bottom: 10px;
+    color: #388e3c;
+}
+
+
+/* Footer Styles */
+.footer {
+    background-color: #5a5a5a; /* Dark Green */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #a5d6a7; /* Light Green */
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: white;
+}

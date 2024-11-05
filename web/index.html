@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Waste Monitoring System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Top Navigation -->
+    <header class="top-nav">
+        <div class="logo">
+            <img src="logo.png" alt="TrashTrack">
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Notifications</a></li>
+                <li><a href="#">Collection Scheduling</a></li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">User Management</a></li>
+            </ul>
+        </nav>
+        <div class="profile">
+            <img src="user-profile.png" alt="User Profile">
+            <span>Admin</span>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul>
+                <li><a target="_blank" href="dashboard.html">Dashboard Overview</a></li>
+                <li><a target="_blank" href="binm.html">Bin Monitoring</a></li>
+                <li><a target="_blank" href="collection.html">Collection Routes</a></li>
+                <li><a target="_blank" href="environ.html">Environmental Impact</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Help & Support</a></li>
+            </ul>
+        </aside>
+
+        <!-- Dashboard Content -->
+        <main class="dashboard-content">
+            <section class="dashboard-stats">
+                <div class="stat-box">
+                    <h3>Total Bins</h3>
+                    <p>150</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Full Bins</h3>
+                    <p>25</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Environmental Impact</h3>
+                    <p>CO2 Saved: 120kg</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Collection Efficiency</h3>
+                    <p>90%</p>
+                </div>
+            </section>
+
+            <!-- Real-Time Map -->
+            <div class="dashboard-map">
+                <div class="map-wrapper">
+                    <h2>Bin Location Map</h2>
+                    <div class="map-container">
+                        <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d67186.39451376791!2d77.38046497983025!3d28.517260374871825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2sNoida%2C%20Uttar%20Pradesh!5e1!3m2!1sen!2sin!4v1729194052816!5m2!1sen!2sin" 
+                        width="700" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                
+                <div class="dashboard-notifications">
+                    <h2>Recent Notifications</h2>
+                    <ul>
+                        <li>Bin #12 is 95% full</li>
+                        <li>Bin #45 requires maintenance</li>
+                        <li>Collection Route updated for Zone B</li>
+                        <li>New environmental report available</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="dashboard-content">
+    <!-- Existing Stats Section -->
+    
+
+    <!-- New Section: Recent Activity -->
+    <div class="dashboard-section recent-activity">
+        <h2>Recent Activity</h2>
+        <ul>
+            <li>Bin #10 collected in Sector 21 at 9:00 AM</li>
+            <li>Maintenance performed on Bin #15 in Sector 62</li>
+            <li>New bin added in Sector 19</li>
+            <li>System alert: Bin #7 is at 95% capacity</li>
+        </ul>
+    </div>
+
+    <!-- New Section: Tasks & Reminders -->
+    <div class="dashboard-section tasks-reminders">
+        <h2>Tasks & Reminders</h2>
+        <ul>
+            <li>Collect all bins in Sector 45 <span class="progress-bar"><span style="width: 70%;"></span></span></li>
+            <li>Perform maintenance in Sector 18 <span class="progress-bar"><span style="width: 40%;"></span></span></li>
+            <li>Check IoT sensor in Bin #22 <span class="progress-bar"><span style="width: 20%;"></span></span></li>
+        </ul>
+    </div>
+
+    <!-- New Section: Waste Collection Trends (Graph/Chart) -->
+    <div class="dashboard-section graph-section">
+        <h2>Waste Collection Trends</h2>
+        <canvas id="wasteTrendsChart"></canvas> <!-- Placeholder for a chart (use Chart.js or similar) -->
+    </div>
+
+    <!-- New Section: User Feedback -->
+    <div class="dashboard-section user-feedback">
+        <h2>User Feedback</h2>
+        <ul>
+            <li>"The collection schedule is really helpful!" - Resident, Sector 21</li>
+            <li>"Bin #5 needs urgent cleaning!" - User, Sector 62</li>
+            <li>"Good job on the maintenance!" - Worker, Sector 18</li>
+        </ul>
+    </div>
+
+    <!-- New Section: Messages -->
+    <div class="dashboard-section messages">
+        <h2>Messages</h2>
+        <ul>
+            <li>System: "Weekly report is available."</li>
+            <li>Admin: "Meeting scheduled for tomorrow."</li>
+            <li>System: "Scheduled maintenance at 2 PM today."</li>
+        </ul>
+    </div>
+</div>
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Smart Waste Management System. All Rights Reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </footer>
+
+</body>
+</html>
